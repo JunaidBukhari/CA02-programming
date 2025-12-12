@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-const SHEET_ID = "1wdwoWiDgu9InMSTDgNShzuVlDQjUx6Je5TgeLZhOb4Y";
-const API_KEY = "AIzaSyCidNWu2iy0BdcLFvZOyrkYQDjgMse-k8I";
+const SHEET_ID = process.env.REACT_APP_SHEET_ID;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [data, setData] = useState([]);
